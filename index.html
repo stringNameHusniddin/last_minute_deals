@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find hotel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <nav>
+                <a href="./index.html" class="logo">
+                    <img src="./images/logo.png" alt="">
+                </a>
+                <a class="link" href="#">Last Minute Deals</a>
+                <a class="link" href="#">Blog</a>
+                <a class="link" href="#">About us</a>
+                <a class="link" href="#">Contacts</a>
+            </nav>
+            <div class="btns">
+                <a class="money" href="#">$</a>
+                <div class="select">
+                    <button>EN</button>
+                </div>
+                <a href="#">
+                    <img src="./images/user.png" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="navbar2">
+            <div class="logo_btn">
+                <button id="menu_btn">
+                    <img src="./images/menu.png" id="menu_img">
+                </button>
+                <a href="./index.html" style="text-decoration:none;">
+                    <img src="./images/logo.png">
+                </a>
+            </div>
+            <a href="#">
+                <img src="./images/user.png" alt="">
+            </a>
+            <div class="links" id="links">
+                <ul>
+                    <li>
+                        <a href="#">Last Minute Deals</a>
+                    </li>
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#">About us</a>
+                    </li>
+                    <li>
+                        <a href="#">Contacts</a>
+                    </li>
+                </ul>
+                <div class="btns">
+                    <a class="money" href="#">$</a>
+                    <div class="select">
+                        <button>EN</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="showcase">
+            <p class="title">Last Minute Deals</p>
+            <div class="input">
+                <div class="left">
+                    <div class="icon">
+                        <img src="./images/location.png" alt="">
+                    </div>
+                    <div class="texts">
+                        <p class="bold">Where</p>
+                        <input class="light" placeholder="Search Destination">
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="when">
+                        <div class="icon">
+                            <img src="./images/calendar.png" alt="">
+                        </div>
+                        <div class="texts">
+                            <p class="bold">When</p>
+                            <input class="light" placeholder="Select Date">
+                        </div>
+                    </div>
+                    <div class="search" style="background-color: #EE685F;">
+                        <img src="./images/search.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="input2">
+                <div class="left">
+                    <div class="icon">
+                        <img src="./images/location.png" alt="">
+                    </div>
+                    <div class="texts">
+                        <p class="bold">Where</p>
+                        <input class="light" placeholder="Search Destination">
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="search" style="background-color: #EE685F;">
+                        <img src="./images/search.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="filter-container">
+            <div class="filters">
+                <button class="filter">
+                    <img src="./images/filter.png" alt="">
+                    <p class="filter_p">Filter</p>
+                </button>
+                <div class="sort">
+                    <button class="sort_p">Sort by</button>
+                    <div class="hidden" id="hidden">
+                        <button>Newest</button>
+                        <button>Rating</button>
+                        <button>Discount</button>
+                        <button>Low to High</button>
+                        <button>High to Low</button>
+                    </div>
+                </div>
+                <div class="relevance">
+                    <button class="relevance_p">Relevance</button>
+                    <img src="./images/arrow-bottom.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="cards"></div>
+        <button class="btn">View More</button>
+        <!-- <footer>
+            <div class="footer-conteiner">
+                <div class="conteiner">
+                    <div class="row">
+                        <strong>Title of section</strong>
+                        <p>Page title</p>
+                        <p>Page title</p>
+                        <p>Page title</p>
+                    </div>
+                    <div class="row">
+                        <strong>Title of section</strong>
+                        <p>Page title</p>
+                        <p>Page title</p>
+                        <p>Page title</p>
+                    </div>
+                    <div class="row">
+                        <strong>Title of section</strong>
+                        <p>Page title</p>
+                        <p>Page title</p>
+                        <p>Page title</p>
+                    </div>
+                    <div class="row2">
+                        <strong>Subscribe to Newsletter</strong>
+                        <div class="all">
+                            <p>Your email</p>
+                            <div class="form">
+                                <input type="text">
+                                <button class="btn">
+                                    <a href="#">
+                                        <i class="fa-brands fa-telegram"></i>
+                                    </a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="img">
+                        <img src="./images/logo.png">
+                    </div>
+                    <div class="author">
+                        Desing by <span>Delvig</span>
+                    </div>
+                    <div class="awesome">
+                        <a href="#"><i class="fa-solid fa-phone"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer> -->
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
